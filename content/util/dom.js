@@ -803,7 +803,7 @@ Foxtrick.addBoxToSidebar = function(doc, title, content, prec, forceLeft) { // F
 	// create new box if old one doesn't exist
 	if (!dest) {
 		dest = doc.createElement('div');
-		dest.className = boxClass;
+		dest.className = boxClass + " box";
 		dest.setAttribute('x-precedence', String(prec));
 
 		// boxHead
